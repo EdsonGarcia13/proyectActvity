@@ -12,7 +12,7 @@
         <h2>Ingresa los datos que se te piden</h2>
         <p>Mi primera encuesta</p>
         <hr>
-        <form id="dataForm" action="resultados.html" method="get">
+        <form id="dataForm">
             <label for="nombre">Nombre:</label>
             <input type="text" id="nombre" name="nombre" required><br><br>
             
@@ -20,7 +20,8 @@
             <input type="number" id="edad" name="edad" required><br><br>
             
             <label for="ciudad">Ciudad donde vives:</label>
-            <input type="text" id="ciudad" name="ciudad" required><br><br>
+            <input type="text" id="ciudad" name="ciudad" list="ciudadesList" required><br><br>
+            <datalist id="ciudadesList"></datalist>
             
             <label for="pasatiempo">Pasatiempo favorito:</label>
             <input type="text" id="pasatiempo" name="pasatiempo" required><br><br>
@@ -28,22 +29,6 @@
             <button type="submit" id="submitBtn" disabled>Registrar</button>
         </form>
     </div>
-    <script>
-        const form = document.getElementById('dataForm');
-        const submitBtn = document.getElementById('submitBtn');
-        const inputs = form.querySelectorAll('input[required]');
-
-        inputs.forEach(input => {
-            input.addEventListener('input', () => {
-                let allFilled = true;
-                inputs.forEach(input => {
-                    if (!input.value) {
-                        allFilled = false;
-                    }
-                });
-                submitBtn.disabled = !allFilled;
-            });
-        });
-    </script>
+    <script src="app.js"></script>
 </body>
 </html>

@@ -1,0 +1,12 @@
+{
+    "Sinaloa": ["Culiacán", "Mazatlán", "Los Mochis"],
+    "Ciudad de México": ["Ciudad de México"],
+    "Jalisco": ["Guadalajara", "Zapopan", "Tlaquepaque"],
+    "Nuevo León": ["Monterrey", "San Nicolás", "Guadalupe"],
+    "Puebla": ["Puebla", "Tehuacán"],
+    "Quintana Roo": ["Cancún", "Playa del Carmen"],
+    "Baja California": ["Tijuana", "Mexicali"],
+    "Yucatán": ["Mérida", "Valladolid"],
+    "Guanajuato": ["León", "Irapuato"],
+    "Querétaro": ["Querétaro", "San Juan del Río"]
+}

@@ -15,14 +15,19 @@
         <p>Edad: <span id="resultadoEdad"></span></p>
         <p>Ciudad: <span id="resultadoCiudad"></span></p>
         <p>Pasatiempo: <span id="resultadoPasatiempo"></span></p>
-        <button onclick="window.history.back()">Regresar</button>
+        <button id="volverBtn">Volver a registrar</button>
     </div>
-    <script>
-        const urlParams = new URLSearchParams(window.location.search);
-        document.getElementById('resultadoNombre').textContent = urlParams.get('nombre');
-        document.getElementById('resultadoEdad').textContent = urlParams.get('edad');
-        document.getElementById('resultadoCiudad').textContent = urlParams.get('ciudad');
-        document.getElementById('resultadoPasatiempo').textContent = urlParams.get('pasatiempo');
-    </script>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div style="font-size: 50px; color: #f44336;">&#10067;</div>
+            <p>¿Quieres volver a realizar el registro?</p>
+            <button id="confirmBtn">Aceptar</button>
+            <button id="cancelBtn">Cancelar</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
 </body>
 </html>
